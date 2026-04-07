@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Luyện tập các thẻ &lt;table&gt;, &lt;form&gt;, &lt;input&gt;, &lt;th&gt;, &lt;td&gt;</h1>
+<h2>Bài 1 : tạo bảng chứa thông tin sản phẩm</h2>
+    <table border="1" style="margin: 0 auto;"> 
+        <caption style="font-size: 30px;"><b><i>My Store</i></b></caption>
+       <br/>
+      <thead>
+        <tr>
+         <th>Item Photo</th>
+         <th>Name</th>
+         <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <td> <img src="./ogranges.jpeg" alt="Oranges" width="150" height="75"></td>  
+        <td>Oranges</td>
+        <td>$1 ea.</td>
+        </tr>
+
+        <tr>
+        <td> <img src="./bananas.jpeg" alt="Bananas" width="150" height="75"></td>
+        <td>Bananas</td>
+        <td>$0.75/lb</td>
+        </tr
+
+        <tr>
+            <td><img src="./Pomegranates.jpg" alt="Pomegranates" width="150" height="75"></td>
+            <td>Pomegranates</td>
+            <td>3 for $5</td>
+        </tr>
+
+        <tr>
+            <td><img src="./gummy.jpeg" alt="Gummy Bears" width="150" height="75"></td>
+            <td>Gummy Bears</td>
+            <td>$6 per bag</td>
+        </tr>
+
+        <tr>
+            <td><img src="./brocoli.jpeg" alt="Broccoli" width="150" height="75"></td>
+            <td>Broccoli</td>
+            <td>$3 a head</td>
+        </tr>
+      </tbody>
+    </table>
+<h2>Bài 2 : tạo form đặt phòng </h2>
+    <h1>Booking Form</h1>
+    <form action="http://www.mysql.com/" method="get"> 
+        <table>
+        <tr>
+          <td><label for="name">Name: </label></td>
+          <td><input type="text" id="Name" name="name"/></td>
+        </tr>
+        <tr>
+           <td><label for="EMAIL">Email: </label></td>
+           <td><input type="email" id="Email" name="Email"/></td>
+        </tr>
+        <tr>
+           <td><label for="Phone">Phone: </label></td>
+           <td><input type="number" id-="Phone" name="number"/></td>
+        </tr>
+            
+        
+        </table>
+        <p>
+            <label for="Date">Date: </label>
+            <input type="date" id="Date" name="Date"
+        </p>
+        <p>
+            <label for="time">Time: </label>
+            <input type="time" id="Time" name="Time"/>
+        </p>
+        <p>
+            <label for="Guests">Number of Guests :</label>
+            <input type="number" id="Guests" name="Guests"/>
+        </p>
+        <button>Summit</button>
+    </form>
+    <h2>Bài 3 : tạo form mua xe hơi</h2>
+    <h1>Car Purchase Form</h1>
+    <form action="http://www.mysql.com/" method="get">
+        <table>
+            <tr>
+                <td><label for="name">Name: </label></td>
+                <td><input type="text" id="name" name="name"</td>
+            </tr>
+            <tr>
+                <td><label for="email">Email: </form></td>
+                <td><input type="email" id="email" name="email"</td>
+            </tr>
+            <tr>
+                <td><label for="Phone">Phone: </label></td>
+                <td><input type="number" id="Phone" name="Phone"</td>
+            </tr>    
+        </table>
+        <p>
+            <label for="Car">Choose a car: </label>
+            <select id="car" name="Car">
+                <option value="model1">Model 1</option>
+                <option value="model2">Model 2</option>
+                <option value="model2">Model 3</option>
+            </select>
+        </p>
+        <p>
+            <label for="Color">Choose a color: </label>
+            <select id="color" name="color">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+            </select>
+        </p>
+        <p>
+            <label for="Quantity">Quantity</label>
+            <input type="number" id="Quantity" name="Quantity">
+        </p>
+        <p>
+            <label for="deliverydate">Delivery Date</label>
+            <input type="date" id="Date" name="date">
+        </p>
+        <button>Summit</button>
+    </form>
+</body>
+</html>
